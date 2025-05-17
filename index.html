@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Лёша лох 🤡</title>
+  <style>
+    body { margin: 0; background: black; overflow: hidden; }
+    #screamer {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      background: url('scream.png') center center no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <audio id="scream-audio" src="scream.mp3"></audio>
+  <div id="screamer"></div>
+  <script>
+    setTimeout(() => {
+      document.getElementById('screamer').style.display = 'block';
+      document.getElementById('scream-audio').play();
+    }, 2000);
+  </script>
+</body>
+</html>
